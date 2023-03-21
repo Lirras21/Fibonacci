@@ -11,7 +11,8 @@ function generateFibonacci(num) {
         let c = a + b;
         a = b;
         b = c;
-        return c;
+        console.log(a);
+
     }
 }
 generateFibonacci(10);
