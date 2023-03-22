@@ -1,34 +1,48 @@
-// ну ок, давай так напиши функцію generateFibonacci(x:number), вона має згенерувати послідовність фібоначі до заданого числа
-// можеш зробити декілька варіантів реалізації (як мінімум два)
-// ознайомся що це таке і де використовується
-// залий код в окремий відкритий репозиторій і скинь мені лінк
-
 
 function generateFibonacci(num) {
     let a = 0,
-        b = 1;
+        b = 1,
+        c,
+        str = [];
+        
     for (let i = 1; i <= num; i++) {
-        let c = a + b;
-        a = b;
-        b = c;
-        console.log(a);
-
+            c = a + b;
+            a = b;
+            b = c;
+            str += a + ", ";
+            if (str.length === num) {
+                break;
+            }
     }
+    console.log(str);
 }
-generateFibonacci(10);
+generateFibonacci(8);
 
-// Ну давай один варіант це кількість чисел
-// А другий варіант це згенерувати до заданого числа, типу якщо 4 то має бути 1 1 2 3
 
-function generateFibonacciSecond(num) {
+
+function generateFibonacciTimes(num) {
     let a = 0,
         b = 1,
-        c;
+        c,
+        str = "";
     for (let i = -1; i < num - 1; i++) {
         c = a + b;
         a = b;
         b = c;
-        console.log(a); 
+        str += a + ', ';
     }
+    console.log(str);
 }
-generateFibonacciSecond(4);
+generateFibonacciTimes(10);
+
+
+function fibonacci(n) {
+    let fibArray = [0, 1];
+    let i = 2;
+    while (fibArray[i - 1] < n) {
+      fibArray[i] = fibArray[i - 1] + fibArray[i - 2];
+      i++;
+    }
+    console.log(fibArray.slice(0, i - 1));
+  }
+  fibonacci(100);
