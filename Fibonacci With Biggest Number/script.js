@@ -1,3 +1,25 @@
+// виправив функцію
+function generateFibonacci(num) {
+  let a = 0,
+      b = 1,
+      c,
+      str = [];
+  for (let i = 0; i <= num; i++) {
+          c = a + b;
+          a = b;
+          b = c;
+          if (a > num ) {
+              break;
+          } else {
+              str += a + ", ";
+          }
+  }
+  console.log(str);
+}
+generateFibonacci(13);
+
+
+
 function fibonacci(n) {
     let fibArray = [0, 1];
     let i = 2;
