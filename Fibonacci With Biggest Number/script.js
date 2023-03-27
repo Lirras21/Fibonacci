@@ -16,7 +16,7 @@ function generateFibonacci(num) {
   }
   console.log(str);
 }
-generateFibonacci(13);
+generateFibonacci(20);
 
 
 
