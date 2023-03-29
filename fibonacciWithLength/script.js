@@ -1,6 +1,6 @@
-function generateFibonacciTimes(num) {
+window.generateFibonacciTimes = function(num) {
   let a = 0,
-  b = 1,
+      b = 1,
       c,
       str = "";
   for (let i = -1; i < num - 1; i++) {
@@ -10,4 +10,4 @@ function generateFibonacciTimes(num) {
     str += a + ', ';
   }
   return str;
-}
+};

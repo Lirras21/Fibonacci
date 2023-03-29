@@ -1,5 +1,4 @@
-
-function generateFibonacciLenght(num) {
+window.generateFibonacciLength = function(num) {
   let a = 0,
       b = 1,
       c,
@@ -15,4 +14,5 @@ function generateFibonacciLenght(num) {
     }
   }
   return str;
-}
+};
+
