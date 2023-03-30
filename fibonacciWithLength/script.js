@@ -1,4 +1,4 @@
-window.generateFibonacciTimes = function(num) {
+function generateFibonacciTimes(num) {
   let a = 0,
       b = 1,
       c,
@@ -10,4 +10,5 @@ window.generateFibonacciTimes = function(num) {
     str += a + ', ';
   }
   return str;
-};
+}
+module.exports = { generateFibonacciTimes };

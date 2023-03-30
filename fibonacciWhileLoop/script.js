@@ -1,4 +1,4 @@
-window.fibonacciWhileLoop = function(n) {
+function fibonacciWhileLoop(n) {
   let a = 0,
       b = 1,
       c = 1,
@@ -10,18 +10,6 @@ window.fibonacciWhileLoop = function(n) {
     str += a + ', ';
   }
   return str;
-};
+}
+module.exports = { fibonacciWhileLoop };
 
-window.fibonacciDoWhileLoop = function (n) {
-  let a = 0,
-      b = 1,
-      c,
-      str = '';
-    do {
-      c = a + b;
-      a = b;
-      b = c;
-      str += a + ', ';
-    } while (c < n);
-    return str;
-};

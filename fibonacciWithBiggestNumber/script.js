@@ -1,4 +1,4 @@
-window.generateFibonacciLength = function(num) {
+function generateFibonacciLength(num) {
   let a = 0,
       b = 1,
       c,
@@ -14,5 +14,6 @@ window.generateFibonacciLength = function(num) {
     }
   }
   return str;
-};
+}
+module.exports = { generateFibonacciLength };
 
