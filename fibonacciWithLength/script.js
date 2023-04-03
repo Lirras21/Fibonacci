@@ -1,4 +1,4 @@
-function generateFibonacciTimes(num) {
+export function generateFibonacciTimes(num) {
   let a = 0,
       b = 1,
       c,
@@ -11,4 +11,3 @@ function generateFibonacciTimes(num) {
   }
   return str;
 }
-module.exports = { generateFibonacciTimes };

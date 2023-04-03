@@ -1,4 +1,4 @@
-function fibonacciWhileLoop(n) {
+export function fibonacciWhileLoop(n) {
   let a = 0,
       b = 1,
       c = 1,
@@ -11,5 +11,5 @@ function fibonacciWhileLoop(n) {
   }
   return str;
 }
-module.exports = { fibonacciWhileLoop };
+
 

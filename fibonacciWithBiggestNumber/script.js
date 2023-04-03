@@ -1,4 +1,4 @@
-function generateFibonacciLength(num) {
+export function generateFibonacciLength(num) {
   let a = 0,
       b = 1,
       c,
@@ -15,5 +15,5 @@ function generateFibonacciLength(num) {
   }
   return str;
 }
-module.exports = { generateFibonacciLength };
+
 
